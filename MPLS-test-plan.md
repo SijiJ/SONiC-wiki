@@ -1,3 +1,22 @@
+- [Overview](#overview)
+  * [Scope](#scope)
+  * [Testbed](#testbed)
+- [Setup configuration](#setup-configuration)
+    + [Setup of DUT switch](#setup-of-dut-switch)
+- [Test cases](#test-cases)
+  * [Test case \#1 - POP Label](#test-case---1---pop-label)
+    + [Test objective](#test-objective)
+    + [Test steps](#test-steps)
+  * [Test case \#2 - SWAP Label for single label](#test-case---2---swap-label-for-single-label)
+    + [Test objective](#test-objective-1)
+    + [Test steps](#test-steps-1)
+  * [Test case \#3 - PUSH Label](#test-case---3---push-label)
+    + [Test objective](#test-objective-2)
+    + [Test steps](#test-steps-2)
+  * [Test case \#4 - SWAP Label for multiple label stack](#test-case---4---swap-label-for-multiple-label-stack)
+    + [Test objective](#test-objective-3)
+    + [Test steps](#test-steps-3)
+
 ## Overview
 This is Test Plan to test MPLS feature on SONiC. The test enables MPLS on interfaces, configures static LSPs and assumes all basic configurations including BGP routes are already preconfigured.
 
@@ -136,7 +155,7 @@ label_del_routes.json
     }
 ]
 ```
-##Test cases
+## Test cases
 
 Each testcase configures static LSP, sends traffic, captures on receving port and verifies appropriate LABEL action is applied on packet.
 
